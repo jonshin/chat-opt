@@ -5,13 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ChatOPT</title>
+    <link rel="icon" href="./images/favicon.svg".
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
 </head>
 <body>
-    <h1>Hello World</h1>
-    <form method="get">
-        <label>Label</label>
-        <input name="messagetext" type="text"></input>
-        <button type="submit">Send</button>
-    </form>
+    <h1>Chat OPT</h1>
+    <div class ="content">
+        <div class="panel">
+            <form novalidate>
+                <fieldset>
+                    <label for="message">
+                        <span>What's on your mind?</span>
+                        <input id="message" name="message" type="text" placeholder="message goes here" required></input>
+                        <span class="error" aria-live="polite">
+                    </label>
+                    <button type="submit" id="send-button">send it</button>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+
 </body>
 </html>
